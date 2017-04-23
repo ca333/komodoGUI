@@ -6,19 +6,19 @@
 This program provides a Graphical User Interface (GUI) for the Komodo client tools that acts as a wrapper and
 presents the information in a user-friendly manner.
 
-![Screenshot](https://github.com/ca333/komodo-swing-wallet-ui/raw/master/docs/komodo_gui.png "Komodo GUI")
+![Screenshot](https://github.com/ca333/komodoGUI/raw/master/docs/komodo_gui.png "Komodo GUI")
 
-#### New/Experimental: [Komodo Desktop GUI Wallet for Windows](https://github.com/ca333/komodo-swing-wallet-ui/blob/master/docs/Readme-Windows.md) is IN WORK
-#### Experimental: [Komodo Desktop GUI Wallet for MAC OS X](https://github.com/ca333/komodo-swing-wallet-ui/blob/master/docs/Readme-Mac.md) is available and tested
+#### New/Experimental: [Komodo Desktop GUI Wallet for Windows](https://github.com/ca333/komodoGUI/blob/master/docs/Readme-Windows.md) is IN WORK
+#### Experimental: [Komodo Desktop GUI Wallet for MAC OS X](https://github.com/ca333/komodoGUI/blob/master/docs/Readme-Mac.md) is available and tested
 
 ## Building, installing and running the Wallet GUI
 
 
 **For security reasons it is recommended to always build the GUI wallet program from GitHub**
-**[source](https://github.com/ca333/komodo-swing-wallet-ui/archive/master.zip).**
+**[source](https://github.com/ca333/komodoGUI/archive/master.zip).**
 The details of how to build it are described below (easy to follow).
 Users who insist on downloading a binary release may instead
-use [Komodo Desktop GUI Wallet - binary release v0.6.1-beta](https://github.com/ca333/komodoOSX/releases/tag/v0.6.1-beta)
+use [Komodo Desktop GUI Wallet - binary release v0.7.7-beta](https://github.com/ca333/komodoGUI/)
 
 
 1. Operating system and tools
@@ -43,20 +43,20 @@ use [Komodo Desktop GUI Wallet - binary release v0.6.1-beta](https://github.com/
 
    As a start you need to clone the komodo-swing-wallet-ui Git repository:
    ```
-   user@ubuntu:~/build-dir$ git clone https://github.com/ca333/komodo-swing-wallet-ui.git
+   user@ubuntu:~/build-dir$ git clone https://github.com/ca333/komodoGUI.git
    ```
    Change the current directory:
    ```
-   user@ubuntu:~/build-dir$ cd komodo-swing-wallet-ui/
+   user@ubuntu:~/build-dir$ cd komodoGUI/
    ```
    Issue the build command:
    ```
-   user@ubuntu:~/build-dir/komodo-swing-wallet-ui$ ant -buildfile ./src/build/build.xml
+   user@ubuntu:~/build-dir/komodoGUI$ ant -buildfile ./src/build/build.xml release
    ```
    This takes a few seconds and when it finishes, it builds a JAR file `./build/jars/KomodoSwingWalletUI.jar`.
    You need to make this file executable:
    ```
-   user@ubuntu:~/build-dir/komodo-swing-wallet-ui$ chmod u+x ./build/jars/KomodoSwingWalletUI.jar
+   user@ubuntu:~/build-dir/komodoGUI$ chmod u+x ./build/jars/KomodoSwingWalletUI.jar
    ```
    At this point the build process is finished the built GUI wallet program is the JAR
    file `./build/jars/KomodoSwingWalletUI.jar`
@@ -70,7 +70,7 @@ use [Komodo Desktop GUI Wallet - binary release v0.6.1-beta](https://github.com/
    and `komodod` you need to take the created file `./build/jars/KomodoSwingWalletUI.jar` and copy it
    to diretcory `/home/user/komodo/src` (the same dir. that contains `komodo-cli` and `komodod`). Example copy command:
    ```
-   user@ubuntu:~/build-dir/komodo-swing-wallet-ui$ cp ./build/jars/KomodoSwingWalletUI.jar /home/user/komodo/src    
+   user@ubuntu:~/build-dir/komodoGUI$ cp ./build/jars/KomodoSwingWalletUI-release.jar /home/user/komodo/src    
    ```
 
   3.2. If you have installed the Komodo [binary packages](https://github.com/ca333/komodo/)
@@ -90,7 +90,7 @@ use [Komodo Desktop GUI Wallet - binary release v0.6.1-beta](https://github.com/
    Assuming you have already installed [Komodo](https://github.com/jl777/komodo) and the GUI Wallet `KomodoSwingWalletUI.jar` in
    directory `/home/user/komodo/src` one way to run it from command line is:
    ```
-   user@ubuntu:~/build-dir/komodo-swing-wallet-ui$ java -jar /home/user/komodo/src/KomodoSwingWalletUI.jar
+   user@ubuntu:~/build-dir/komodoGUI$ java -jar /home/user/komodo/src/KomodoSwingWalletUI-release.jar
    ```
    If you are using Ubuntu (or similar ;) Linux you may instead just use the file manager and
    right-click on the `KomodoSwingWalletUI.jar` file and choose the option "Open with OpenJDK 8 Runtime".
@@ -101,7 +101,7 @@ At the present time this project is non-commercial in nature and developed by vo
 Wallet useful, please consider making a donation for its further development. Your contribution matters! Donations are accepted at Komodo address:
 
 ```
-RCA333bLBdgzvJmHFAwCBBHUwwCsTVatp9
+ RCA333HaehyKJphwAkxvU9BHo7ApEG75a4
 ```
 
 ### License
