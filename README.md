@@ -23,7 +23,7 @@ use [Komodo Desktop GUI Wallet - binary release v0.7.7-beta](https://github.com/
 
 1. Operating system and tools
 
-   As of January 2017 the base software (Komodo v1.0.5) is mostly tested on Linux, Windows (experimental) and Mac OS X (experimental) (with same limitation as [ZCash](https://z.cash/)).  
+   As of January 2017 the base software (Komodo v1.0.8) is mostly tested on Linux, Windows (experimental) and Mac OS X (experimental) (with same limitation as [ZCash](https://z.cash/)).  
    The Linux tools you need to build and run the Wallet GUI are Git, Java (JDK7 or later) and
    Ant. If using Ubuntu Linux, they may be installed via command:
    ```
