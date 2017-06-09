@@ -98,7 +98,7 @@ public class Komodo
     public Komodo(StartupProgressDialog progressDialog)
         throws IOException, InterruptedException, WalletCallException
     {
-        super("Komodo Wallet 0.7.7 (beta)");
+        super("Komodo Wallet 0.7.8 (beta)");
 
         if (progressDialog != null)
         {
